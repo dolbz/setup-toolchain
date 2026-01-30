@@ -187,7 +187,7 @@ function getMoonVersion(): string {
 }
 
 function getMoonIsV2OrHigher(): boolean {
-	return getMoonVersion().split('.')[0] > 1
+	return parseInt(getMoonVersion().split('.')[0]) > 1
 }
 
 export async function installBin(bin: string) {
