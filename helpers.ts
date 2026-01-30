@@ -186,7 +186,7 @@ function getMoonVersion(): string {
 	return core.getInput('moon-version') || 'latest';
 }
 
-function getMoonIsV2OrHigher(): bool {
+function getMoonIsV2OrHigher(): boolean {
 	return getMoonVersion().split('.')[0] > 1
 }
 
